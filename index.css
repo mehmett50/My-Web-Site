@@ -1,19 +1,22 @@
 body {
     margin: 0;
     padding: 20px;
-    background-color: rgb(228, 228, 228);
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 50%, #ffd4a8 100%);
+    min-height: 100vh;
 }
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 .nav-bar {
-    background: linear-gradient(125deg, white 0%, grey 100%);
+    background: linear-gradient(125deg, #ff8c42 0%, #ff6b35 50%, #f44336 100%);
     overflow: hidden;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+    z-index: 1000;
 }
 .button-navbar {
     display: flex;
@@ -22,24 +25,28 @@ html {
     padding: 10px;
 }
 .button-navbar a {
-    background-color: transparent;
-    color: black;
-    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid transparent;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 22px;
+    border-radius: 25px;
     margin: 4px 20px;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: all 0.3s ease;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .button-navbar a:hover {
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #ff6b35;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+    border-color: #ff6b35;
 }
 .main-content {
     display: flex;
@@ -49,12 +56,12 @@ html {
 }
 .profile-card {
     margin: 60px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.2);
     max-width: 400px;
-    background: linear-gradient(290deg, white 0%, grey 100%);
+    background: linear-gradient(145deg, #ffffff 0%, #ffe8d6 100%);
     text-align: center;
     font-size: 14px;
     display: flex;
@@ -62,20 +69,27 @@ html {
     align-items: center;
     min-width: 300px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(255, 107, 53, 0.3);
 }
 .profile-card-image {
     margin-bottom: 15px;
     border-radius: 50%;
     overflow: hidden;
+    border: 4px solid #ff8c42;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }
 .profile-card-image img {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 .profile-card-image img:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 .social-media-buttons {
     display: flex;
@@ -85,97 +99,165 @@ html {
 .social-media-buttons a {
     display: inline-flex;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
     text-decoration: none;
     margin: 22px;
+    color: #ff6b35;
 }
 .social-media-buttons a svg {
     display: block;
+    filter: drop-shadow(0 2px 4px rgba(255, 107, 53, 0.3));
 }
 .social-media-buttons a:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(5deg);
+    filter: brightness(1.2);
 }
 .about-me {
     margin-bottom: 60px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.15);
     max-width: 700px;
-    background: linear-gradient(290deg, white 0%, grey 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffe8d6 100%);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(255, 107, 53, 0.25);
 }
 .about-me h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ff6b35;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 107, 53, 0.1);
 }
 .about-me p {
     font-size: 16px;
+    color: #333;
 }
 .what-i-do {
     margin-bottom: 60px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(255, 140, 66, 0.15);
     max-width: auto;
-    background: linear-gradient(290deg, white 0%, grey 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fff0e6 100%);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.what-i-do:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(255, 140, 66, 0.25);
 }
 .what-i-do h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ff8c42;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 140, 66, 0.1);
 }
 .what-i-do ul {
     list-style-type: none;
     padding-left: 20px;
 }
+.what-i-do ul li {
+    padding: 12px 0;
+    border-left: 4px solid #ff8c42;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background: rgba(255, 140, 66, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.what-i-do ul li:hover {
+    background: rgba(255, 140, 66, 0.1);
+    transform: translateX(10px);
+    border-left-width: 6px;
+}
 .my-goals {
     margin-bottom: 60px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.15);
     max-width: auto;
-    background: linear-gradient(290deg, white 0%, grey 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffe8d6 100%);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.my-goals:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(255, 107, 53, 0.25);
 }
 .my-goals h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ff6b35;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 107, 53, 0.1);
 }
 .my-goals ul {
     list-style-type: none;
     padding-left: 20px;
 }
+.my-goals ul li {
+    padding: 12px 0;
+    border-left: 4px solid #ff6b35;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background: rgba(255, 107, 53, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.my-goals ul li:hover {
+    background: rgba(255, 107, 53, 0.1);
+    transform: translateX(10px);
+    border-left-width: 6px;
+}
 .contact {
     margin-bottom: 60px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(255, 140, 66, 0.15);
     max-width: auto;
-    background: linear-gradient(290deg, white 0%, grey 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #fff0e6 100%);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(255, 140, 66, 0.25);
 }
 .contact h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ff8c42;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 140, 66, 0.1);
+}
+.contact p {
+    color: #333;
+    text-align: center;
 }
 .back-to-top {
     margin-top: 20px;
@@ -185,22 +267,25 @@ html {
     padding: 10px;
 }
 .back-to-top a {
-    background-color: rgb(206, 206, 206);
-    color: black;
-    border: none;
-    padding: 10px 12px;
+    background: linear-gradient(135deg, #ff8c42 0%, #ff6b35 100%);
+    color: white;
+    border: 2px solid transparent;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 22px;
+    border-radius: 30px;
     margin: 4px 20px;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: all 0.3s ease;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }
 .back-to-top a:hover {
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.2);
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+    border-color: #fff;
 }
