@@ -1,1 +1,80 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet USLU</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Açılış Dairesi -->
+    <div id="loader">
+        <div class="circle-overlay"></div>
+    </div>
+    <div class="nav-bar">
+        <div class="button-navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#what-i-do">What I Do</a>
+            <a href="#my-goals">My Goals</a>
+            <a href="#contact">Contact</a>
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">🇬🇧 EN</button>
+        </div>
+    </div>
+    <div id="about-me"class="main-content">
+        <div class="profile-card">
+            <div class="profile-card-image">
+                <img src="https://avatars.githubusercontent.com/u/194463762?s=400&u=42958aa353289f83decbf33dd5e7e7b91f203f76&v=4" alt="Mehmet USLU">
+            </div>
+            <div class="">
+                <h1>Mehmet USLU</h1>
+                <h2>Junior Software Developer | Junior IT Specialist | Technology Enthusiast</h2>
+            </div>
+            <div class="social-media-buttons">
+                <a href="https://github.com/mehmett50" target="_blank">
+                    <svg height="48" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="48" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                        <path fill="currentColor" d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mehmet-uslu-10652b29b/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="48" height="48" focusable="false">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/_mehmett50/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48" focusable="false">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Hello! I’m Mehmet USLU. I was born in 2006 and I’m a technology enthusiast and software developer. I’m currently working as an IT Specialist at a logistics company. I aim to build a career in computer programming and I continuously work on improving myself in this field. I’m passionate about coding, problem-solving, and learning new technologies.<br><br> I also have hands-on experience with hardware commonly used in logistics operations; in particular, I’m knowledgeable about Zebra barcode scanners and printers, including their setup, usage, and basic management. My goal is to make a difference in the tech world by developing innovative projects and to specialize further in software development.</p>
+        </div>
+    </div>
+    <div id="what-i-do" class="what-i-do">
+        <h3>What I Do</h3>
+        <ul>
+            <li>Software Development: Developing simple applications and software using programming languages.</li>
+            <li>IT Support: Providing technical support and troubleshooting for hardware and software issues.</li>
+            <li>Learning & Development: Continuously enhancing my skills in programming and IT through courses and projects.</li>
+        </ul>
+    </div>
+    <div id="my-goals" class="my-goals">
+        <h3>My Goals</h3>
+        <ul>
+            <li>Become a proficient software developer with expertise in multiple programming languages.</li>
+            <li>Contribute to open-source projects and collaborate with other developers.</li>
+            <li>Stay updated with the latest technology trends and advancements.</li>
+        </ul>
+    </div>
+    <div id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>If you would like to get in touch with me, please feel free to reach out via my GitHub or LinkedIn profiles by clicking the icons above.</p>
+    </div>
+    <div class="back-to-top">
+        <a href="#">Başa Dön</a>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
