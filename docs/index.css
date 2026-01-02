@@ -423,3 +423,138 @@ html {
 .back-to-top {
     animation-delay: 1.2s;
 }
+
+/* Mobil Uyumluluk - Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .button-navbar {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    
+    .button-navbar a {
+        padding: 10px 12px;
+        margin: 3px 5px;
+        font-size: 14px;
+    }
+    
+    .lang-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin: 3px 5px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    
+    .profile-card {
+        margin: 20px 10px;
+        padding: 20px;
+        min-width: auto;
+        max-width: 100%;
+    }
+    
+    .profile-card h1 {
+        font-size: 24px;
+    }
+    
+    .profile-card h2 {
+        font-size: 14px;
+    }
+    
+    .social-media-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .social-media-buttons a {
+        margin: 10px;
+    }
+    
+    .social-media-buttons a svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .about-me,
+    .what-i-do,
+    .my-goals,
+    .contact {
+        margin: 20px 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .about-me h3,
+    .what-i-do h3,
+    .my-goals h3,
+    .contact h3 {
+        font-size: 24px;
+    }
+    
+    .about-me p,
+    .what-i-do ul li,
+    .my-goals ul li,
+    .contact p {
+        font-size: 15px;
+    }
+    
+    .what-i-do ul li,
+    .my-goals ul li {
+        padding: 10px 0;
+        padding-left: 15px;
+    }
+    
+    .back-to-top {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .back-to-top a {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button-navbar a {
+        padding: 8px 10px;
+        margin: 2px 3px;
+        font-size: 12px;
+    }
+    
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .profile-card-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-card h1 {
+        font-size: 20px;
+    }
+    
+    .profile-card h2 {
+        font-size: 12px;
+    }
+    
+    .social-media-buttons a svg {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .about-me h3,
+    .what-i-do h3,
+    .my-goals h3,
+    .contact h3 {
+        font-size: 20px;
+    }
+}
