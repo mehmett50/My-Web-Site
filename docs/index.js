@@ -28,7 +28,7 @@ const translations = {
         
         // Contact Section
         'contact-title': 'İletişim',
-        'contact-text': 'Benimle iletişime geçmek isterseniz, lütfen yukarıdaki ikonlara tıklayarak GitHub veya LinkedIn profillerim aracılığıyla ulaşmaktan çekinmeyin.',
+        'contact-text': 'Benimle iletişime geçmek isterseniz, lütfen yukarıdaki ikonlara tıklayarak GitHub, LinkedIn veya Instagram profillerim aracılığıyla ulaşabilirsiniz.',
         
         // Back to Top
         'back-to-top': 'Başa Dön'
@@ -61,7 +61,7 @@ const translations = {
         
         // Contact Section
         'contact-title': 'Contact',
-        'contact-text': 'If you would like to get in touch with me, please feel free to reach out via my GitHub or LinkedIn profiles by clicking the icons above.',
+        'contact-text': 'You can reach out to me via my GitHub, LinkedIn or Instagram profiles by clicking the icons above.',
         
         // Back to Top
         'back-to-top': 'Back to Top'
