@@ -70,7 +70,17 @@
     </div>
     <div id="contact" class="contact">
         <h3>Contact</h3>
-        <p>You can reach out to me via my GitHub, LinkedIn or Instagram profiles by clicking the icons above.</p>
+        <form action="https://formspree.io/f/xkogvarg" method="POST">
+            <label id="email-label">
+                Your email:
+                <input type="email" name="email" placeholder="">
+            </label>
+            <label id="message-label">
+                Your message:
+                <textarea name="message" placeholder="Enter your message"></textarea>
+            </label>
+            <button type="submit" id="submit-btn">Send</button>
+        </form>    
     </div>
     <div class="back-to-top">
         <a href="#">Başa Dön</a>

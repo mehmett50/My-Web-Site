@@ -29,6 +29,11 @@ const translations = {
         // Contact Section
         'contact-title': 'İletişim',
         'contact-text': 'Benimle iletişime geçmek isterseniz, lütfen yukarıdaki ikonlara tıklayarak GitHub, LinkedIn veya Instagram profillerim aracılığıyla ulaşabilirsiniz.',
+        'email-label': 'E-posta adresiniz:',
+        'email-placeholder': 'E-posta adresinizi girin',
+        'message-label': 'Mesajınız:',
+        'message-placeholder': 'Mesajınızı girin',
+        'submit-btn': 'Gönder',
         
         // Back to Top
         'back-to-top': 'Başa Dön'
@@ -62,6 +67,11 @@ const translations = {
         // Contact Section
         'contact-title': 'Contact',
         'contact-text': 'You can reach out to me via my GitHub, LinkedIn or Instagram profiles by clicking the icons above.',
+        'email-label': 'Your email:',
+        'email-placeholder': 'Enter your email',
+        'message-label': 'Your message:',
+        'message-placeholder': 'Enter your message',
+        'submit-btn': 'Send',
         
         // Back to Top
         'back-to-top': 'Back to Top'
@@ -121,7 +131,27 @@ function applyLanguage(lang) {
     
     // Contact
     document.querySelector('.contact h3').textContent = t['contact-title'];
-    document.querySelector('.contact p').textContent = t['contact-text'];
+    const contactP = document.querySelector('.contact p');
+    if (contactP) contactP.textContent = t['contact-text'];
+    
+    // Contact Form
+    const emailLabel = document.getElementById('email-label');
+    const messageLabel = document.getElementById('message-label');
+    const submitBtn = document.getElementById('submit-btn');
+    
+    if (emailLabel) {
+        const emailInput = emailLabel.querySelector('input');
+        emailLabel.childNodes[0].textContent = t['email-label'] + ' ';
+        if (emailInput) emailInput.placeholder = t['email-placeholder'];
+    }
+    
+    if (messageLabel) {
+        const messageTextarea = messageLabel.querySelector('textarea');
+        messageLabel.childNodes[0].textContent = t['message-label'] + ' ';
+        if (messageTextarea) messageTextarea.placeholder = t['message-placeholder'];
+    }
+    
+    if (submitBtn) submitBtn.textContent = t['submit-btn'];
     
     // Back to Top
     document.querySelector('.back-to-top a').textContent = t['back-to-top'];
